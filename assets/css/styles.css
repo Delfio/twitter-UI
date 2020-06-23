@@ -10,3 +10,99 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
+
+input, button {
+    outline: none;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 36px;
+}
+
+header#main-header {
+    height: 46px;
+    background-color: #fff;
+    min-width: 100%;
+}
+
+header#main-header div.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 100%;
+}
+
+header#main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header#main-header nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #667580;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child {
+    margin-left: 0px;
+}
+
+
+header#main-header nav ul li a img {
+    margin-right: 7px;
+
+}
+
+.side-menu {
+    display: flex;
+}
+
+.side-menu img {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.side-menu button {
+    background-color: #3bb9e3;
+    height: 34px;
+    width: 90px;
+    border-radius: 16px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.side-menu input {
+    width: 220px;
+    border: 1px solid #e6ecf0;
+    height: 34px;
+    padding: 0 30px 0 12px;
+    border-radius: 16px;
+    color: #667581;
+    font-size: 12px;
+    font-weight: 500;
+    background: #f5f8fa url('/assets/images/search.svg') no-repeat 200px center;
+}
+@media only screen and (max-width: 820px) {
+    .side-menu {
+        display: none;
+    }
+    header#main-header nav ul {
+        display: none;
+    }
+    header#main-header div.content {
+        justify-content: center;
+    }
+}
